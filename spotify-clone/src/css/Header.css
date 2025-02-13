@@ -9,3 +9,48 @@ header {
 header > div {
   display: flex;
 }
+
+#search-bar {
+  display: flex;
+  width: 29.625rem;
+  height: 3rem;
+  margin-left: .5rem;
+  /* for search icon */
+  position: relative;
+  /* prettiness */
+  background-color: #1f1f1f;
+  border-radius: 2rem;
+}
+
+
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+#search-icon {
+  max-width: 2.1rem;
+  position: absolute;
+  left: 1em;
+}
+
+#search-song {
+  width: 29.625rem;
+  padding: 0 4rem 0 3rem;
+  background-color: #1f1f1f;
+  border: none;
+  border-radius: 2rem;
+  transition: all .1s ease-in-out;
+}
+
+#search-song:focus {
+  outline: 2px solid white;
+}
+
+#browse-icon {
+  position: absolute;
+  right: 0;
+}
