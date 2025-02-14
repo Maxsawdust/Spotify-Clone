@@ -5,12 +5,12 @@ import "./CircleButton.css";
 export default function CircleButton(props) {
   return (
     <button
-      className="CircleButton"
+      className="circle-button"
       style={{ backgroundColor: props.bgCol || "#1f1f1f" }}
       id={props.id || ""}
     >
       <img
-        className="CircleButtonImg"
+        className="circle-button-img"
         src={props.src || placeHolderSquare}
         alt={props.alt || ""}
       />

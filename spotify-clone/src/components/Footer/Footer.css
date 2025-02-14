@@ -10,6 +10,8 @@ footer {
 }
 
 #currently-playing {
+  /* sizing accurate to the website */
+  width: 30%;
   display: flex;
   align-items: center;
   padding-left: .5rem;
@@ -19,4 +21,66 @@ footer {
   height: 80%;
   border-radius: .25rem;
   margin-right: .5rem;
+}
+
+#current-song-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 .5rem;
+}
+
+#current-song-info > a {
+  text-decoration: none;
+  color: white;
+}
+
+#current-song-info > a:hover {
+  text-decoration: underline;
+  /* opacity set to 1 so that author name goes white on hover */
+  opacity: 1;
+}
+
+#current-song-title {
+  font-size: .875rem;
+}
+
+#current-song-author {
+  opacity: .6;
+  font-size: .75rem;
+  font-weight: 400;
+}
+
+#like-song {
+  height: 1rem;
+  width: 1rem;
+  box-sizing: content-box;
+  padding: .5rem;
+  opacity: .6;
+}
+
+#like-song:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#like-song > img{
+  min-width: 1.2rem;
+}
+
+#player-controls {
+  /* accurate sizing with max-width so it doesn't get too big */
+  width: 40%;
+  max-width: 45.125rem;
+  /* flex to control children elements */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#additional-controls {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }

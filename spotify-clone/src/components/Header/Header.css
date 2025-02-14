@@ -75,7 +75,6 @@ header > div {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: sans-serif;
   color: white;
   text-decoration: none;
   transition: all .2s ease-in-out;
