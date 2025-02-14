@@ -1,0 +1,17 @@
+.CircleButton {
+  /* setting size and circle shape */
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border-radius: 100%;
+  border: 0;
+  /* centering the img */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CircleButtonImg {
+  max-width: 70%;
+  border-radius: 100%;
+}

@@ -1,0 +1,9 @@
+/* container div to apply flex styling to elements */
+.container {
+  height: 100vh;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  position: relative;
+}

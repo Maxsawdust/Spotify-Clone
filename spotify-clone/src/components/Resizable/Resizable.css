@@ -1,0 +1,10 @@
+.PanelGroup {
+  /* allows the group to fit the available space */
+  flex: 1;
+  background-color: #1f1f1f;
+}
+
+.Panel {
+  display: flex;
+  flex-direction: column;
+}

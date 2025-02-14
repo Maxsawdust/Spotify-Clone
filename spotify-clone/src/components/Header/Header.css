@@ -1,0 +1,100 @@
+header {
+  background-color: black;
+  height: 4em;
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: calc(100% - 1rem);
+}
+
+header > div {
+  display: flex;
+}
+
+#center-header {
+  margin-left: 14rem;
+}
+
+#search-bar {
+  display: flex;
+  width: 29.625rem;
+  height: 3rem;
+  margin-left: .5rem;
+  /* for search icon */
+  position: relative;
+  /* prettiness */
+  background-color: #1f1f1f;
+  border-radius: 2rem;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+#search-icon {
+  max-width: 2.1rem;
+  position: absolute;
+  left: .5em;
+}
+
+#search-input {
+  width: 29.625rem;
+  padding: 0 4rem 0 3rem;
+  background-color: #1f1f1f;
+  border: none;
+  border-radius: 2rem;
+  transition: all .1s ease-in-out;
+  font-size: 1rem;
+  color:  white;
+}
+
+#search-input:focus {
+  outline: 2px solid white;
+}
+
+#browse-icon {
+  /* positioning to center icon vertically while maintaining a small border */
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50%;
+  /* border styling */
+  border-radius: 0 100% 100% 0;
+  border-left: 1px solid white;
+}
+
+#install-link {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  color: white;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+#install-link:hover {
+  opacity: .5;
+}
+
+#download-icon {
+  width: 15%;
+  margin-right: .25em;
+}
+
+#notifications-button {
+  opacity: .5;
+  transition: all .1s ease-in-out;
+}
+
+#notifications-button:hover {
+  opacity: 1
+}
