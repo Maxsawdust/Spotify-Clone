@@ -1,6 +1,6 @@
-import Header from "./components/Header";
-import Resizable from "./components/Resizable";
-import Footer from "./components/Footer";
+import Header from "./components/Header/Header";
+import Resizable from "./components/Resizable/Resizable";
+import Footer from "./components/Footer/Footer";
 import "./css/App.css";
 
 function App() {

@@ -1,12 +1,12 @@
-import CircleButton from "./CircleButton";
-import spotifyLogo from "../assets/spotify-logo.png";
-import homeIcon from "../assets/home-icon.png";
-import profilePic from "../assets/profile-pic.jpg";
-import browseIcon from "../assets/browse-icon.png";
-import searchIcon from "../assets/search-icon.png";
-import notificationsBell from "../assets/notifications-bell.png";
-import downloadIcon from "../assets/download-icon.png";
-import "../css/Header.css";
+import CircleButton from "../CircleButton/CircleButton";
+import spotifyLogo from "../../assets/spotify-logo.png";
+import homeIcon from "../../assets/home-icon.png";
+import profilePic from "../../assets/profile-pic.jpg";
+import browseIcon from "../../assets/browse-icon.png";
+import searchIcon from "../../assets/search-icon.png";
+import notificationsBell from "../../assets/notifications-bell.png";
+import downloadIcon from "../../assets/download-icon.png";
+import "./Header.css";
 
 export default function Header() {
   return (

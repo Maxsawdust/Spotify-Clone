@@ -1,5 +1,5 @@
 import { Panel, PanelGroup, PanelResizeHandle } from "react-resizable-panels";
-import "../css/Resizable.css";
+import "./Resizable.css";
 
 /* Spotify has a resizable panel on the left of the webpage. To implement 
    this, I researched the react-resizable-panels library */

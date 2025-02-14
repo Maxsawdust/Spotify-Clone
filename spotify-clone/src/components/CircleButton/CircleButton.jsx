@@ -1,5 +1,5 @@
-import placeHolderSquare from "../assets/placeholder-square.jpg";
-import "../css/CircleButton.css";
+import placeHolderSquare from "../../assets/placeholder-square.jpg";
+import "./CircleButton.css";
 
 // CircleButton accepts props to manipulate img src, alt, and button backgroundColor
 export default function CircleButton(props) {
