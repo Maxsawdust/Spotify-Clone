@@ -1,0 +1,27 @@
+.custom-player {
+  background-color: black;
+}
+
+.rhap_container {
+  padding: 0;
+}
+
+.rhap_controls-section {
+  justify-content: center;
+  height: 2rem;
+  gap: .5rem;
+}
+
+.rhap_play-pause-button {
+  color: white;
+}
+
+.rhap_time {
+  color: #b3b3b3;
+}
+
+#shuffle-button {
+  opacity: .6;
+  width: 2.5rem;
+  cursor: pointer;
+}
