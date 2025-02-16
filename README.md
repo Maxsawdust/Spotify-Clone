@@ -1,5 +1,8 @@
-This is a Spotify clone I'm making for my HyperionDev course.
+This Project is a clone of https://open.spotify.com/ that I've made for my HyperionDev bootcamp.
 
-This project sets out to display my foundational React skills in creating a static website while effectively using components and props.
+It was made to showcase my understanding of functional React components, but along the way I decided to 
+reasearch React hooks, and incorporated some of those too.
 
-In the future, I hope to revisit this to add working functionality to it as a music player.
+This taught me a lot about React and css as well, and I learned a lot of useful front-end skills while making this.
+
+in the future, I'd definitely like to revisit this and make it so that you can play more songs than just Gangnam Style!
