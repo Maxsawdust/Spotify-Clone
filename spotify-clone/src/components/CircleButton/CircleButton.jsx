@@ -7,7 +7,8 @@ export default function CircleButton(props) {
     <button
       className="circle-button"
       style={{ backgroundColor: props.bgCol || "#1f1f1f" }}
-      id={props.id || ""}
+      {...(props.id && { id: props.id })}
+      {...(props.onClick && { onClick: props.onClick })}
     >
       <img
         className="circle-button-img"

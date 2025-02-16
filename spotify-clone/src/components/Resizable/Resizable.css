@@ -1,10 +1,16 @@
 .PanelGroup {
   /* allows the group to fit the available space */
   flex: 1;
-  background-color: #1f1f1f;
+  /* min-height to protect against overflow */
+  min-height: 0;
+  gap: .25rem;
 }
 
 .Panel {
   display: flex;
   flex-direction: column;
+  color: white;
+  border-radius: .5rem;
+  background-color: #121212;
+  padding: .75rem 1rem;
 }

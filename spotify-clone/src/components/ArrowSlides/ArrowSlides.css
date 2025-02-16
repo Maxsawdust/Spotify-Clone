@@ -1,0 +1,38 @@
+.slides-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.slides-container > .circle-button {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  z-index: 2;
+}
+
+.slides-container > .circle-button:first-child {
+  left: 0;
+  box-shadow: .75em 0 2em black;
+}
+
+.slides-container > .circle-button:last-child {
+  right: 0;
+  box-shadow: -.75em 0 2em black;
+}
+
+#slides-values {
+  display: flex;
+  overflow-x: hidden;
+  gap: .5rem;
+}
+
+.slides-value-button {
+  min-width: fit-content;
+  padding: 0 .75rem;
+  background-color: #2a2a2a;
+  color: white;
+  border: 0;
+  border-radius: 99999px;
+  height: 2rem;
+}
