@@ -1,9 +1,12 @@
 import { Panel, PanelGroup, PanelResizeHandle } from "react-resizable-panels";
 import CircleButton from "../CircleButton/CircleButton";
+import Library from "../Library/Library";
 import ArrowSlides from "../ArrowSlides/ArrowSlides";
 import collapseIcon from "../../assets/collapse-icon.png";
 import plusIcon from "../../assets/plus-icon.png";
 import rightArrow from "../../assets/right-arrow.png";
+import searchIcon from "../../assets/search-icon.png";
+import queueIcon from "../../assets/queue-icon.png";
 import "./Resizable.css";
 import "./leftPanel.css";
 
@@ -47,7 +50,25 @@ export default function Resizable() {
               <ArrowSlides values={values} />
             </div>
           </div>
-          <div></div>
+          <div id="library-container">
+            <div id="library-search">
+              <CircleButton
+                src={searchIcon}
+                bgCol="#121212"
+                id="library-search-button"
+              />
+
+              <a href="/" id="recents">
+                Recents
+                <CircleButton
+                  src={queueIcon}
+                  bgCol="#121212"
+                  id="recents-icon"
+                />
+              </a>
+            </div>
+            <Library />
+          </div>
         </nav>
       </Panel>
       <PanelResizeHandle />

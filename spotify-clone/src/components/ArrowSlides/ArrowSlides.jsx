@@ -16,7 +16,7 @@ export default function ArrowSlides(props) {
   const scroll = (direction) => {
     // getting the button container on arrow button click
     const container = valueRef.current;
-    const scrollAmount = 200;
+    const scrollAmount = 2000;
 
     container.scrollBy({
       // checking the direction argument passed in by the button click

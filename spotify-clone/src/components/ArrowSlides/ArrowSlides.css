@@ -9,6 +9,11 @@
   height: 2rem;
   position: absolute;
   z-index: 2;
+  transition: all .2s ease-in-out;
+}
+
+.slides-container > .circle-button:hover {
+  background-color: #383838 !important;
 }
 
 .slides-container > .circle-button:first-child {
@@ -35,4 +40,9 @@
   border: 0;
   border-radius: 99999px;
   height: 2rem;
+  transition: all .2s ease-in-out;
+}
+
+.slides-value-button:hover {
+  background-color: #383838;
 }

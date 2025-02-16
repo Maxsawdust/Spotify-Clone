@@ -1,0 +1,28 @@
+#library {
+  list-style-type: none;
+  padding: 0;
+}
+
+.library-entry {
+  display: flex;
+  gap: 1rem;
+  padding: .5rem;
+  cursor: pointer;
+}
+
+.library-entry:hover {
+  background-color: #1F1F1F;
+  border: 0;
+  border-radius: .3rem;
+}
+
+.song-cover-image {
+  max-width: 3rem;
+  max-height: 3rem;
+  border-radius: .2rem;
+}
+
+.song-info {
+  display: flex;
+  flex-direction: column;
+}
