@@ -2,8 +2,8 @@
 import { faker } from "@faker-js/faker";
 import "./Library.css";
 
-export default function Library() {
-  // function to generate random songs
+export default function Library(props) {
+  // function to generate random songs and random artists
   const generateRandomSong = () => {
     return {
       title: faker.music.songName(),
@@ -19,19 +19,31 @@ export default function Library() {
     libraryArr.push(generateRandomSong());
   }
 
+  // content variable for easy access from spans
+  const content = props.content || "full";
+
   return (
-    <ul id="library">
-      {libraryArr.map((entry) => {
+    <div
+      className="library"
+      {...(props.id && { id: props.id })}
+      content={content}
+    >
+      {libraryArr.map((entry, index) => {
         return (
-          <li className="library-entry" key={entry.title}>
+          <div className="library-entry" key={index}>
             <img className="song-cover-image" src={entry.coverUrl} />
             <div className="song-info">
-              <span className="song-title">{entry.title}</span>
-              <span className="song-artist">{entry.artist}</span>
+              {/* rendering the content of song info based on the content prop */}
+              {(content == "title" || content == "full") && (
+                <span className="song-title">{entry.title}</span>
+              )}
+              {(content == "artist" || content == "full") && (
+                <span className="song-artist">{entry.artist}</span>
+              )}
             </div>
-          </li>
+          </div>
         );
       })}
-    </ul>
+    </div>
   );
 }

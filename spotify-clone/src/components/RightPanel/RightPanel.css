@@ -1,0 +1,40 @@
+main {
+  padding: 0.5rem 2rem;
+  overflow-y: auto;
+}
+.filter-button {
+  min-width: fit-content;
+  padding: 0 0.75rem;
+  background-color: #2a2a2a;
+  color: white;
+  border: 0;
+  border-radius: 99999px;
+  height: 2rem;
+  transition: all 0.2s ease-in-out;
+  margin-right: 0.5rem;
+}
+
+.filter-button:hover {
+  background-color: #383838;
+}
+
+#main-library-container > .library {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
+  padding-top: 1.5rem;
+}
+
+#main-library-container > .library > .library-entry {
+  background-color: #1f1f1f;
+  min-height: 6rem !important;
+}
+
+#main-library-container > .library > .library-entry:hover {
+  background-color: #2a2a2a;
+}
+
+#main-library-container > .library > .library-entry > .song-cover-image {
+  max-height: 5rem !important;
+  max-width: 5rem !important;
+}
