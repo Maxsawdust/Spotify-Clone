@@ -90,6 +90,19 @@ footer {
   align-items: center;
 }
 
+#additional-controls .circle-button {
+  max-width: 2rem;
+  max-height: 2rem;
+}
+
+#additional-controls .circle-button:not(:first-child) {
+  opacity: .7;
+}
+
+#dj-icon {
+  margin: 0 .5rem;
+}
+
 #volume-controls {
   display: flex;
   align-items: center;

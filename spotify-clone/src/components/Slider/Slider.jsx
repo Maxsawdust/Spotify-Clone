@@ -19,6 +19,7 @@ export default function Slider() {
       max="100"
       // calling "handleChange" on change
       onChange={handleChange}
+      value={progress}
       // updating the CSS "range-progress" variable as the progress variable gets changed
       style={{ "--range-progress": `${progress}%` }}
     />

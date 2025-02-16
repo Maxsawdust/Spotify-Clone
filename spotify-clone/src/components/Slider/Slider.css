@@ -1,4 +1,5 @@
    input[type="range"] {
+    /* get rid of all default browser styling */
     -webkit-appearance: none;
     appearance: none;
     background-color: transparent;
@@ -7,6 +8,7 @@
   }
   
   input[type="range"]::-webkit-slider-runnable-track{
+    /* update the gradient break-point based on slider position */
     background: linear-gradient(
       to right,
       white var(--range-progress),
@@ -18,6 +20,7 @@
   }
 
   input[type="range"]::-webkit-slider-runnable-track:hover {
+    /* make sure the track is green on hover */
     background: linear-gradient(
     to right,
     #1db954  var(--range-progress),
@@ -55,6 +58,7 @@
   }
 
   input[type="range"]:hover::-webkit-slider-thumb {
+    /* thumb must only show up on hover */
     opacity: 1;
   }
   

@@ -1,5 +1,13 @@
 import currentSongCover from "../../assets/song-cover.png";
 import addCircle from "../../assets/add-circle.png";
+import djIcon from "../../assets/dj-icon.png";
+import nowPlaying from "../../assets/now-playing.png";
+import micIcon from "../../assets/mic-icon.png";
+import queueIcon from "../../assets/queue-icon.png";
+import devicesIcon from "../../assets/devices-icon.png";
+import volumeIcon from "../../assets/volume-icon.png";
+import pipIcon from "../../assets/pip-icon.png";
+import expandIcon from "../../assets/expand-icon.png";
 import CircleButton from "../CircleButton/CircleButton";
 import Player from "../Player/Player";
 import Slider from "../Slider/Slider";
@@ -28,17 +36,17 @@ export default function Footer() {
         </div>
       </div>
       <div id="additional-controls">
-        <CircleButton />
-        <CircleButton />
-        <CircleButton />
-        <CircleButton />
-        <CircleButton />
+        <CircleButton src={djIcon} bgCol="#0a59b8" id="dj-icon" />
+        <CircleButton src={nowPlaying} bgCol="black" />
+        <CircleButton src={micIcon} bgCol="black" />
+        <CircleButton src={queueIcon} bgCol="black" />
+        <CircleButton src={devicesIcon} bgCol="black" />
         <label id="volume-controls">
-          <CircleButton />
+          <CircleButton src={volumeIcon} bgCol="black" />
           <Slider />
         </label>
-        <CircleButton />
-        <CircleButton />
+        <CircleButton src={pipIcon} bgCol="black" />
+        <CircleButton src={expandIcon} bgCol="black" />
       </div>
     </footer>
   );
