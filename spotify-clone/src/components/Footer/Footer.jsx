@@ -27,6 +27,8 @@ export default function Footer() {
           </a>
         </div>
         <CircleButton id="like-song" bgCol="black" src={addCircle} />
+        {/* I left this looking really out of place so that it was easy to spot */}
+        <a href="https://open.spotify.com/">LINK TO ORIGINAL WEBSITE</a>
       </div>
       <div id="player-controls">
         <div id="playback-bar">
